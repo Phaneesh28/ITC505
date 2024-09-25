@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment-3</title>
+    <style>
+        /* Import the font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        /* Apply the imported font */
+        body {
+            font-family: 'Press Start 2P', sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Deliver a Font to the Client</h1>
+    <p>You can use the CSS <code>@import</code> rule to include a font from an external provider like Google Fonts. This method allows the browser to download and use a custom font when a webpage is loaded. After importing the font, you can apply it to HTML elements using the <code>font-family</code> property, ensuring that the same font is used across all devices and browsers, even if the font isn't installed locally.</p>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
