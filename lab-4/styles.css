@@ -1,0 +1,78 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+    color: #0044cc;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 24px;
+    color: #0044cc;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #0044cc;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: 22px;
+    color: #0044cc;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+section ul {
+    margin: 10px 0 20px 20px;
+}
+
+section ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #777;
+}
