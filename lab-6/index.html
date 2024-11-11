@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6: Holy Grail Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lab 6</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Factorial Calculator</h2>
+            <p>Enter a non-negative integer and click the "Calculate" button to get the factorial.</p>
+            <input type="text" id="numberInput" placeholder="e.g., 5">
+            <button onclick="calculateFactorial()">Calculate</button>
+            <p>Result:</p>
+            <div id="output"></div>
+        </main>
+        
+
+        <aside class="advertisement">
+            <a href="https://www.amazon.com/" target="_blank">
+                <img src="https://freedom.alpineschools.org/wp-content/uploads/sites/15/2020/11/Amazon-150x150.gif" alt="Amazon Product">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="https://www.footprint.co.uk/wp-content/uploads/2013/08/FB-logo-150x150.jpg" alt="Amazon Product">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="https://www.shareicon.net/data/128x128/2015/06/28/61208_linkedin_500x500.png" alt="Amazon Product">
+            </a>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <p><strong>Addendum:</strong> This page demonstrates the "Holy Grail" layout with an interactive JavaScript bubble sort. The user can enter a list of numbers, which are then sorted and displayed in ascending order.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
