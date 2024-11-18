@@ -6,7 +6,7 @@ const storyStages = {
             { text: "Follow the River", nextStage: "riverPath" },
             { text: "Explore the Ruins", nextStage: "ruinsPath" }
         ],
-        image: "images/forest.jpg"
+        image: "forest.jpg"
     },
     riverPath: {
         text: "You follow the river and encounter a talking frog. Do you help it or ignore it?",
@@ -14,7 +14,7 @@ const storyStages = {
             { text: "Help the Frog", nextStage: "frogHelp" },
             { text: "Ignore the Frog", nextStage: "ignoreFrog" }
         ],
-        image: "images/river.jpg"
+        image: "river.jpg"
     },
     ruinsPath: {
         text: "You enter the ruins and find a treasure chest. Open it or leave it?",
@@ -22,27 +22,27 @@ const storyStages = {
             { text: "Open the Chest", nextStage: "openChest" },
             { text: "Leave the Chest", nextStage: "leaveChest" }
         ],
-        image: "images/ruins.jpg"
+        image: "ruins.jpg"
     },
     frogHelp: {
         text: "The frog rewards you with a magic gem. You are safe. The End.",
         choices: [],
-        image: "images/gem.jpg"
+        image: "gem.jpg"
     },
     ignoreFrog: {
         text: "You ignore the frog and fall into a hidden trap. The End.",
         choices: [],
-        image: "images/trap.jpg"
+        image: "trap.jpg"
     },
     openChest: {
         text: "The chest is cursed! You are trapped forever. The End.",
         choices: [],
-        image: "images/curse.png"
+        image: "curse.png"
     },
     leaveChest: {
         text: "You wisely leave the chest, but find a magical sword outside. The End.",
         choices: [],
-        image: "images/sword.jpg"
+        image: "sword.jpg"
     }
 };
 
