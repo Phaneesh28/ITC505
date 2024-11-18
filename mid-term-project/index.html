@@ -18,6 +18,32 @@
         </div>
         
         <div id="choicesSection"></div>
+
+        <!-- Addendum Section -->
+        <article id="addendumSection">
+            <h2>Addendum Summary</h2>
+            
+            <section>
+                <h3>1. HTML (Structure)</h3>
+                <p><strong>Insights:</strong> The structure focuses on simplicity and keeping the user experience intuitive. A <code>&lt;main&gt;</code> section was used to logically group the story text, choices, and potential dynamic elements like the addendum for clarity and accessibility. The <code>&lt;footer&gt;</code> includes the <code>lastModified</code> functionality to offer transparency about updates.</p>
+                <p><strong>Challenges:</strong> Maintaining semantic correctness while integrating a dynamically updating section like the addendum. Ensuring the new section fits seamlessly into the overall layout without disrupting existing elements.</p>
+                <p><strong>Creative Process:</strong> Positioned the addendum inside the <code>&lt;main&gt;</code> tag to keep it aligned with the interactive elements. Used semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> to enhance accessibility and organization.</p>
+            </section>
+
+            <section>
+                <h3>2. CSS (Styling)</h3>
+                <p><strong>Insights:</strong> The design prioritizes readability and aesthetic coherence, using colors like soft green (<code>#effaf3</code>) to align with the forest adventure theme. Rounded borders and padding create a modern, approachable interface, while typography (<code>'Verdana', sans-serif</code>) ensures readability.</p>
+                <p><strong>Challenges:</strong> Balancing aesthetic appeal with functionality and avoiding layout shifts caused by dynamic content additions like the addendum.</p>
+                <p><strong>Creative Process:</strong> Used <code>margin-top</code> and <code>padding</code> to separate the main content from the addendum. Defined a color palette that complements the theme without overwhelming the user. Ensured responsiveness by using flexible units like <code>rem</code> and <code>%</code>.</p>
+            </section>
+
+            <section>
+                <h3>3. JavaScript (Interactivity)</h3>
+                <p><strong>Insights:</strong> JavaScript drives the game's interactivity by dynamically updating the story text, images, and choices based on user input. The addendum section can also update dynamically to reflect the user's decisions.</p>
+                <p><strong>Challenges:</strong> Synchronizing updates to the addendum section with the game’s progression and ensuring DOM updates occur efficiently without introducing unnecessary delays or redraws.</p>
+                <p><strong>Creative Process:</strong> Extended the <code>updateStage</code> function to include an <code>updateAddendum</code> function, ensuring the addendum content reflects the current game state. Structured the code modularly to make it reusable for future enhancements.</p>
+            </section>
+        </article>
     </main>
 
     <footer>
