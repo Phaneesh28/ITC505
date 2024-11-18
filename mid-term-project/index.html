@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Forest Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Magic Forest Adventure</h1>
+    </header>
+    
+    <main>
+        <div id="storySection">
+            <p id="storyText">Welcome to the Magic Forest Adventure! Dare to explore?</p>
+            <img id="storyImage" src="https://via.placeholder.com/600" alt="Adventure Image" style="display: none;">
+        </div>
+        
+        <div id="choicesSection"></div>
+    </main>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
