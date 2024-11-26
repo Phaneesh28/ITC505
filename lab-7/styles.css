@@ -49,8 +49,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    margin-left: 155px;
-    
 }
 
 button:hover {
@@ -65,7 +63,4 @@ button:hover {
 #addendum h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-}
-#footer{
-    text-align: center;
 }
