@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mad Lib Generator</h1>
+    </header>
+    <main>
+        <form action="/submit" method="POST">
+            <label for="hero">Hero Name:</label>
+            <input type="text" id="hero" name="hero" required>
+            <br>
+            <label for="creature">Mythical Creature:</label>
+            <input type="text" id="creature" name="creature" required>
+            <br>
+            <label for="weapon">Weapon:</label>
+            <input type="text" id="weapon" name="weapon" required>
+            <br>
+            <label for="place">Magical Place:</label>
+            <input type="text" id="place" name="place" required>
+            <br>
+            <label for="action">Action:</label>
+            <input type="text" id="action" name="action" required>
+            <br>
+            <button type="submit">Create Story</button>
+        </form>
+    </main>
+    <footer>
+        <p id="footer">Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p>
+            <strong>Process and Creative Choices:</strong> This project aimed to create an engaging and interactive Mad Lib generator. The UI design prioritized simplicity and user-friendliness. Validation checks were implemented on both the client and server sides to ensure data completeness.
+        </p>
+        <p>
+            <strong>Frontend:</strong> The interface was designed with semantic HTML and styled using CSS for a visually appealing layout. A clear and responsive structure was implemented to provide a seamless user experience.
+        </p>
+        <p>
+            <strong>Backend:</strong> The server-side code, built with Node.js and Express, efficiently handled POST requests and generated dynamic responses. Input validation ensured error-free user interaction.
+        </p>
+        <p>
+            <strong>Challenges:</strong> Ensuring consistent feedback and managing empty inputs were key challenges. These were resolved using clear validation logic and user-friendly messages.
+        </p>
+        <p>
+            <strong>Insights:</strong> This project reinforced the importance of validation, event handling, and backend processing. The separation of concerns between frontend and backend made the codebase easier to maintain.
+        </p>
+        <p>
+            <strong>Future Enhancements:</strong> Potential improvements include storing stories in a database and allowing users to customize the Mad Lib template for greater flexibility.
+        </p>
+    </section>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
