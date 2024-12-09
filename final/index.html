@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lights Out</h1>
+    <div id="game-board"></div>
+
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p><strong>Development Process:</strong> The game was developed using a modular approach to ensure maintainability and scalability. The CSS grid layout was utilized to create the game board, providing a responsive and visually appealing design. JavaScript was used to implement game logic, including toggling squares and checking win conditions. The initial randomization of the board was carefully designed to ensure the game remains solvable by simulating random clicks on a solved board.</p>
+        
+        <p><strong>Challenges and Solutions:</strong> One significant challenge was ensuring the board is solvable with a random configuration. This was solved by starting with a blank (solved) board and applying random toggles programmatically. Debugging click-based interactions also required careful testing, particularly for edge cases like corners and edges of the grid.</p>
+        
+        <p><strong>Creative Choices:</strong> To enhance user experience, the grid size was fixed at 5x5, balancing challenge and playability. The color scheme was chosen for high contrast, making the toggled states visually distinct. The use of alerts for winning ensures immediate feedback for the player.</p>
+        
+        <p><strong>Insights Gained:</strong> This project reinforced the importance of modular design, as separating logic for toggling squares and checking win conditions made debugging and enhancements easier. The use of CSS grid was an excellent choice for managing a dynamic layout, and randomization techniques in game design were explored in depth.</p>
+        
+        <p><strong>Future Enhancements:</strong> Possible additions include a timer to track completion time, customizable grid sizes for varied difficulty levels, and animations for toggling squares to improve visual appeal.</p>
+    </section>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <script>
+            var x = document.lastModified;
+            document.getElementById('lastModified').textContent = x;
+        </script>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
